@@ -24,11 +24,11 @@ export function App() {
       {isLoading && <p>Loading contacts...</p>}
       {error && <p>{error}</p>}
       <p>{items.length > 0 && JSON.stringify(items, null, 2)}</p>
-      <Section title="Phonebook" />
+      {/* <Section title="Phonebook" />
       <ContactForm  />
       <Section title="Contacts" />
       <Filter />
-      <RenderContacts />
+      <RenderContacts /> */}
     </Container>
   );
 }
