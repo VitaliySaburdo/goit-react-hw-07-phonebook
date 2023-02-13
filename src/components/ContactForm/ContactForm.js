@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Form, Input, Label, Button } from './ContactForm.styled';
-import { addContact } from '../../redux/contactsSlice';
+// import { addContact } from '../../redux/contactsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
 import { getContacts } from 'redux/selectors';
@@ -20,7 +20,7 @@ export function ContactForm() {
     if (isNameInContact) {
       return alert(`${name} is already in contacts`);
     }
-    dispatch(addContact(name, number));
+    dispatch((name, number));
 
     // e.target.reset();
     resetForm();
