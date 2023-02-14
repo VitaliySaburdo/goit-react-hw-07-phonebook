@@ -1,10 +1,18 @@
 import styled from 'styled-components';
 
+export const List = styled.ul`
+  display: block;
+  margin: 0;
+  padding: 0;
+`;
+
 export const Item = styled.li`
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
   &:last-child {
     margin-bottom: 0;
   }
@@ -22,4 +30,10 @@ export const Button = styled.button`
   border-radius: 4px;
   border: none;
   outline: none;
+`;
+
+export const Image = styled.img`
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 `;
