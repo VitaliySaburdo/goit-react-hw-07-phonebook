@@ -1,7 +1,7 @@
-// import { ContactForm } from './ContactForm/ContactForm';
+import { ContactForm } from './ContactForm/ContactForm';
 import { Section } from './Section/Section';
-// import Filter from './Filter/Filter';
-// import { RenderContacts } from './RenderContactsList/RenderContactsList';
+import Filter from './Filter/Filter';
+import { RenderContacts } from './RenderContactsList/RenderContactsList';
 import PropTypes from 'prop-types';
 import { Container } from './App.styled';
 import { useEffect } from "react";
@@ -22,11 +22,11 @@ export function App() {
   return (
     <Container>
       <Section title="Phonebook" />
-      {/* <ContactForm  /> */}
-      {/* <Section title="Contacts" /> */}
-      {/* <Filter /> */}
+      <ContactForm  />
+      <Section title="Contacts" />
+      <Filter />
       {isLoading && !error && <b>Request in progress...</b>}
-      {/* <RenderContacts /> */}
+      <RenderContacts />
     </Container>
   );
 }
