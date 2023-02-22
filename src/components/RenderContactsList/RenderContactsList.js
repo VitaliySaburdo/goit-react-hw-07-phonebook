@@ -13,7 +13,6 @@ export const RenderContacts = () => {
   const visibleContact = contacts.filter(contact =>
     contact.name.toLowerCase().includes(normalizeFilter)
   );
-  console.log(contacts);
 
   return (
     <List>
